@@ -19,7 +19,7 @@ const MeetTheFounder = () => {
               src="/founder.jpg"
               alt="Founder"
               fill
-              className="object-cover object-top" // 👈 Crops from bottom
+              className="object-cover object-top"
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
@@ -35,10 +35,13 @@ const MeetTheFounder = () => {
         >
           <h2 className="text-4xl font-bold luxury-font mb-4">Meet the CEO</h2>
           <p className="text-gray-700 text-lg mb-4">
-            <span className="text-[#b3995d] font-semibold">Mr. Shine Simon</span>, Founder and CEO of Amston Homes, embodies over 12 years of excellence in the real estate and service sectors. With a vision rooted in integrity, sophistication, and thoughtful design, he has shaped Amston into a symbol of trust, quality, and enduring value.
+            <span className="text-[#b3995d] font-semibold">Mr. Shine Simon</span>, Founder and CEO of Amston Homes, is a seasoned business professional and certified business analyst with over 12 years of expertise in real estate and service sectors across <span className="text-[#004643] font-medium">Kerala, Bangalore, the Middle East, and Dubai (UAE)</span>.
           </p>
           <p className="text-gray-600 italic text-sm">
-            His leadership is defined by strategic insight, a deep understanding of market dynamics, and an unwavering commitment to client satisfaction. From bespoke developments to investment advisory, Shine Simon champions a culture of clarity, reliability, and long-term growth — inspiring every space we create and every relationship we build.
+            Guided by a vision of integrity, sophistication, and forward-thinking design, Shine has established Amston as a name synonymous with trust, luxury, and performance. His deep understanding of market dynamics and client-centric approach ensures that every project delivers exceptional value—financially and experientially.
+          </p>
+          <p className="text-gray-600 italic text-sm mt-3">
+            Whether driving high-end developments or offering strategic investment guidance, Shine leads with precision, clarity, and a long-term growth mindset. His entrepreneurial spirit and commitment to architectural elegance continue to define the spaces Amston creates.
           </p>
         </motion.div>
       </div>

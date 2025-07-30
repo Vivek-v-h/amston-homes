@@ -20,7 +20,6 @@ const ContactUs = () => {
     const message = formData.get("message") as string;
 
     const mailtoLink = `mailto:contact@amstonhomes.com?subject=New%20Enquiry%20from%20${name}&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
-
     window.location.href = mailtoLink;
 
     toast.success("Redirecting to email client...");
@@ -59,8 +58,12 @@ const ContactUs = () => {
             <div className="flex items-start gap-3">
               <PhoneCall className="text-[#e2b866]" />
               <div>
-                <p>+91 9633668594</p>
-                <p>+971 507557686</p>
+                <p>
+                  🇮🇳 <span className="ml-1">+91 9633668594</span>
+                </p>
+                <p>
+                  🇦🇪 <span className="ml-1">+971 507557686</span>
+                </p>
               </div>
             </div>
           </div>
@@ -68,9 +71,9 @@ const ContactUs = () => {
           {/* Call Buttons */}
           <div className="flex flex-col md:flex-row gap-4 pt-4">
             {[
-              { label: "Call India", number: "+919633668594" },
-              { label: "Call UAE", number: "+971507557686" },
-            ].map(({ label, number }) => (
+              { label: "Call India", number: "+919633668594", flag: "🇮🇳" },
+              { label: "Call UAE", number: "+971507557686", flag: "🇦🇪" },
+            ].map(({ label, number, flag }) => (
               <motion.a
                 key={label}
                 href={`tel:${number}`}
@@ -78,6 +81,7 @@ const ContactUs = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-[#e2b866] hover:bg-[#cba956] text-black flex items-center gap-2 font-semibold px-6 py-3 rounded-full transition-all shadow-lg"
               >
+                <span className="text-lg">{flag}</span>
                 <svg
                   className="w-5 h-5 animate-pulse"
                   viewBox="0 0 24 24"
@@ -96,7 +100,6 @@ const ContactUs = () => {
 
           {/* Social Icons */}
           <div className="flex space-x-4 pt-4">
-            
             <motion.a
               whileHover={{ scale: 1.1 }}
               href="mailto:contact@amstonhomes.com"

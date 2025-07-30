@@ -34,6 +34,7 @@ const Footer = () => {
           <h4 className="text-[#b3995d] font-semibold text-lg mb-4">Contact</h4>
           <p className="text-sm text-gray-400">Amston Homes, Kowdiar, Tvm, Kerala</p>
           <p className="text-sm text-gray-400">+91 96336 68594</p>
+          <p className="text-sm text-gray-400">+971 507557686</p>
           <p className="text-sm text-gray-400">contact@amstonhomes.com</p>
         </div>
 

@@ -50,7 +50,7 @@ const Aboutus = () => {
               it’s thoughtfully brought to life.
             </p>
             <p className="text-lg mt-4 md:text-xl font-medium tracking-wide text-[#b3995d]">
-              Built on trust, backed by excellence.
+              -"Built on trust, backed by excellence."
             </p>
           </motion.div>
 
