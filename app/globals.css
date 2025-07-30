@@ -24,3 +24,10 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Krona+One&display=swap');
+
+.luxuryy-font {
+  font-family: 'Krona One', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

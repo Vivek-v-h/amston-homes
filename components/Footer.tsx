@@ -32,8 +32,8 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h4 className="text-[#b3995d] font-semibold text-lg mb-4">Contact</h4>
-          <p className="text-sm text-gray-400">Amston Homes,kowadiar, Tvm, Kerala</p>
-          <p className="text-sm text-gray-400">9633668594</p>
+          <p className="text-sm text-gray-400">Amston Homes, Kowdiar, Tvm, Kerala</p>
+          <p className="text-sm text-gray-400">+91 96336 68594</p>
           <p className="text-sm text-gray-400">contact@amstonhomes.com</p>
         </div>
 
@@ -54,6 +54,18 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Subsidiaries Section */}
+      <div className="border-t border-gray-700 mt-12 pt-8">
+        <h4 className="text-[#b3995d] font-semibold text-lg text-center mb-4">Amston Group</h4>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-sm text-gray-300 text-center">
+          <div>Amston Homes</div>
+          <div>Amston Logistics</div>
+          <div>Amston Asset Management</div>
+          <div>Amston Digital Solutions</div>
+        </div>
+      </div>
+
+      {/* Copyright */}
       <div className="text-center text-sm text-gray-500 pt-10">
         © {new Date().getFullYear()} Amston Homes. All rights reserved.
       </div>

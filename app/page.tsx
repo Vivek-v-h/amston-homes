@@ -9,6 +9,8 @@ import Footer from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
 import Locations from "@/components/locations";
+import WhyUs from "@/components/WhyUs";
+
 const page = () => {
   return (
     <div>
@@ -18,12 +20,14 @@ const page = () => {
       <HomePage />
       <Aboutus />
 
-      <Narrow />
+      
       <Services />
       <Locations />
       <Portfolio />
+      <WhyUs />
       <ContactUs />
       <MeetTheFounder/>
+      <Narrow />
       <Footer />
     </div>
   )

@@ -27,23 +27,28 @@ const Navbar = () => {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20 text-[#f5f6f7]">
-        {/* Logo */}
+        {/* Logo and Tagline */}
         <div className="flex items-center space-x-2">
           <img src="/assets/logo.png" alt="Logo" className="h-8 w-auto" />
-          <span className="flex items-end space-x-2">
-            <span
-              style={{
-                fontFamily: "NeonTubes",
-                letterSpacing: "0.25em",
-              }}
-              className="text-2xl sm:text-3xl font-normal tracking-widest leading-none"
-            >
-              AMSTON
+          <div className="flex flex-col leading-tight">
+            <div className="flex items-end space-x-2">
+              <span
+                style={{
+                  fontFamily: "NeonTubes",
+                  letterSpacing: "0.25em",
+                }}
+                className="text-2xl sm:text-3xl font-normal tracking-widest"
+              >
+                AMSTON
+              </span>
+              <span className="text-lg sm:text-xl font-medium tracking-tight">
+                Homes
+              </span>
+            </div>
+            <span className="text-[11px] sm:text-xs text-gray-400 tracking-wide pt-1">
+              Built by trust, backed by excellence
             </span>
-            <span className="text-lg sm:text-xl font-medium tracking-tight">
-              Homes
-            </span>
-          </span>
+          </div>
         </div>
 
         {/* Desktop Nav */}

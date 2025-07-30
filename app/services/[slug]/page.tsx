@@ -17,73 +17,73 @@ const serviceDetails: Record<
   "construction": {
     title: "Construction",
     details:
-      "We specialize in Residential & Commercial construction, Renovation projects, and Annual Maintenance Contracts (AMC).",
+      "Modern architectural design fused with luxury construction — from villas to premium lifestyle homes.",
     extended:
-      "Our construction philosophy combines architectural integrity, premium-grade materials, and efficient project timelines. We ensure compliance, quality, and customer satisfaction across all our builds.",
+      "We build for tomorrow with precision engineering, aesthetic integrity, and the finest materials. Our luxury builds reflect modern living ideals with seamless execution from foundation to finish.",
     image: "/construction.png",
   },
   "real-estate": {
     title: "Real Estate",
     details:
-      "We offer plot sales, flat & apartment deals, villa sales, and commercial space deals.",
+      "Premium property deals and curated lifestyle spaces designed to elevate modern living.",
     extended:
-      "With deep market knowledge and a strong legal support system, we help our clients make secure and rewarding real estate investments. Our end-to-end solutions simplify property transactions for NRIs and locals alike.",
+      "We connect clients with luxury villas, stylish flats, and investment-worthy plots — all aligned with premium urban lifestyles. Our process ensures safe, transparent, and growth-focused real estate decisions.",
     image: "/real-estate.png",
   },
   "property-management": {
     title: "Property Management",
     details:
-      "End-to-end management — from rent collection to maintenance and legal compliance.",
+      "Effortless ownership with full-service property care built for premium residences and luxury estates.",
     extended:
-      "We protect your property like it’s our own. Our system ensures transparency, steady returns, and asset value enhancement over time — perfect for absentee owners and busy professionals.",
+      "Our modern approach ensures lifestyle preservation and value growth through smart maintenance, tenant services, and seamless management of high-end properties.",
     image: "/property-management.png",
   },
   "architect-consultation": {
     title: "Architect Consultation",
     details:
-      "Collaborate with top architects for efficient, regulation-compliant, and luxurious designs.",
+      "Modern architectural excellence tailored for luxurious, elegant, and sustainable living spaces.",
     extended:
-      "We prioritize functionality, natural light, space optimization, and future scalability in every consultation, helping clients achieve visionary outcomes through smart design.",
+      "Our architects blend design intelligence with lifestyle sensibilities, creating spaces that define premium living — where form, function, and beauty coexist effortlessly.",
     image: "/architect.png",
   },
   "rental-resale": {
     title: "Rental & Resale",
     details:
-      "Connecting properties to ideal tenants and buyers through verified listings and marketing.",
+      "Optimized solutions for premium property leasing and resale in today’s lifestyle-driven market.",
     extended:
-      "We navigate complex documentation, screening, and negotiation processes so you can focus on returns. Our transparency builds trust, ensuring long-term leasing or smooth resale outcomes.",
+      "We help you maximize returns from luxury properties, with targeted marketing, verified listings, and negotiation support for a smooth and profitable experience.",
     image: "/rental.png",
   },
   "contracting": {
     title: "Contracting",
     details:
-      "Turnkey material and subcontracting services delivered with precision and integrity.",
+      "Streamlined contracting built for modern projects, luxury builds, and architectural precision.",
     extended:
-      "We support large-scale projects and specialized trades through expert manpower and technology-backed execution plans, keeping client timelines and budgets intact.",
+      "We deliver turnkey solutions for premium developments with expert teams, curated materials, and strict quality control aligned with lifestyle aspirations.",
     image: "/contracting.png",
   },
   "channel-partnering": {
     title: "Channel Partnering",
     details:
-      "Expand your business through strategic collaborations with trusted real estate and construction partners.",
+      "Grow with us in the luxury and premium real estate space through trusted partnerships.",
     extended:
-      "We provide a transparent partnership ecosystem, enabling agents and businesses to grow alongside us with shared resources, branding, and mutual trust.",
+      "Collaborate on high-value lifestyle projects and modern developments. Our partner ecosystem is designed for shared success and elevated standards.",
     image: "/channel.png",
   },
   "interior-design": {
     title: "Interior Design",
     details:
-      "Where luxury meets practicality — tailored interiors for residences and workspaces.",
+      "Designing interiors that reflect refined lifestyle, modern architecture, and luxury comfort.",
     extended:
-      "Our team blends spatial logic, color harmony, and lifestyle-specific planning to create elegant, inspiring environments. We handle everything from material selection to final execution.",
+      "From space planning to material curation, we create premium environments that celebrate personal style, functional elegance, and lifestyle harmony.",
     image: "/Interior.jpg",
   },
   "infrastructure-development": {
     title: "Infrastructure Development",
     details:
-      "We build essential infrastructure — roads, utilities, and more — for sustainable urban expansion.",
+      "Future-ready infrastructure that supports modern architectural growth and luxury communities.",
     extended:
-      "With civic responsibility at the core, we focus on long-term value through environmentally sound practices and smart engineering in every project.",
+      "We engineer urban essentials — from roads to utilities — designed for scalable, eco-conscious living aligned with the aesthetics and function of modern life.",
     image: "/infrastructure.jpg",
   },
 };

@@ -67,7 +67,7 @@ const services = [
     title: "Infrastructure Development",
     icon: <FaRoad />,
     description:
-      "From roads to utilities, we create foundational infrastructure that uplifts communities and enables future-ready living.",
+      "From utilities, we create foundational infrastructure that uplifts communities and enables future-ready living.",
   },
 ];
 
