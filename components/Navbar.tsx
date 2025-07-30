@@ -46,7 +46,7 @@ const Navbar = () => {
               </span>
             </div>
             <span className="text-[11px] sm:text-xs text-gray-400 tracking-wide pt-1">
-              Built by trust, backed by excellence
+              Built on trust, backed by excellence
             </span>
           </div>
         </div>

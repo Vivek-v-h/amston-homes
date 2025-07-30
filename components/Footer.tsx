@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Logo + Tagline */}
         <div className="space-y-4">
           <h3 className="text-2xl font-bold luxury-font text-[#b3995d]">
-            Amston Group
+            Amston Homes 
           </h3>
           <p className="text-sm text-gray-400">
             Building beyond bricks. Creating legacies rooted in trust, design, and quality.
