@@ -5,20 +5,20 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
-    videoSrc: "/home-bg.mp4",  // Desktop video
-    mobileVideoSrc: "/home-bg-mobile.mp4",  // Mobile video
+    videoSrc: "/home-bg.mp4", // Desktop video
+    mobileVideoSrc: "/home-bg-mobile.mp4", // Mobile video
     heading: "Built on trust,",
     subheading: "Backed by excellence",
   },
   {
-    videoSrc: "/luxury-home.mp4",  // Desktop video
-    mobileVideoSrc: "/luxury-home-mobile.mp4",  // Mobile video
+    videoSrc: "/luxury-home.mp4", // Desktop video
+    mobileVideoSrc: "/luxury-home-mobile.mp4", // Mobile video
     heading: "Crafted for luxury",
     subheading: "Engineered for comfort",
   },
   {
-    videoSrc: "/skyline-living.mp4",  // Desktop video
-    mobileVideoSrc: "/skyline-living-mobile.mp4",  // Mobile video
+    videoSrc: "/skyline-living.mp4", // Desktop video
+    mobileVideoSrc: "/skyline-living-mobile.mp4", // Mobile video
     heading: "Where vision meets value",
     subheading: "Live beyond limits",
   },
@@ -45,9 +45,13 @@ const HomePage = () => {
     if (!currentVideo) return;
 
     // Set the video source to mobile or desktop based on screen size
-    const sourceElement = currentVideo.querySelector("source") as HTMLSourceElement;
+    const sourceElement = currentVideo.querySelector(
+      "source"
+    ) as HTMLSourceElement;
     if (sourceElement) {
-      sourceElement.src = isMobile ? slides[current].mobileVideoSrc : slides[current].videoSrc;
+      sourceElement.src = isMobile
+        ? slides[current].mobileVideoSrc
+        : slides[current].videoSrc;
       currentVideo.load(); // Reload the video to apply the new source
     }
 
@@ -71,7 +75,7 @@ const HomePage = () => {
       currentVideo.removeEventListener("ended", handleEnded);
       currentVideo.removeEventListener("canplay", playVideo);
     };
-  }, [current, isMobile]);  // Add `isMobile` to dependency array to react to screen resize
+  }, [current, isMobile]); // Add `isMobile` to dependency array to react to screen resize
 
   const handleDragEnd = (_: any, info: any) => {
     if (info.offset.x < -100) {
@@ -84,16 +88,19 @@ const HomePage = () => {
   return (
     <div id="home" className="relative w-full h-screen overflow-hidden">
       {/* Navbar */}
-      
 
       {/* Background Videos */}
       {slides.map((slide, index) => (
         <video
-          key={index}  // Ensure React re-renders when screen size changes
-          ref={(el) => (videoRefs.current[index] = el)}
+          key={index} // Ensure React re-renders when screen size changes
+          ref={(el) => {
+            videoRefs.current[index] = el;
+          }}
           muted
           playsInline
-          className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ease-in-out ${index === current ? "opacity-100" : "opacity-0"}`}
+          className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ease-in-out ${
+            index === current ? "opacity-100" : "opacity-0"
+          }`}
         >
           <source
             src={isMobile ? slide.mobileVideoSrc : slide.videoSrc} // Default video src based on screen size
