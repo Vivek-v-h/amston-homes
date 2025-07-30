@@ -67,7 +67,7 @@ export default function ProjectsPage() {
 
   return (
     <section className="bg-[#f8f8f6] text-[#1a1a1a] py-24 px-4 md:px-12">
-      <div className="max-w-7xl mx-auto space-y-12">
+      <div className="max-w-7xl mx-auto space-y-12 cursor-pointer">
         {/* Back Button */}
         <div className="mb-8">
           <button
