@@ -10,11 +10,12 @@ import HomePage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
 import Locations from "@/components/locations";
 import WhyUs from "@/components/WhyUs";
+import OurTeam from '@/components/Ourteam';
 
 const page = () => {
   return (
     <div>
-      <div className="fixed absolute top-0 z-30 w-full">
+      <div className="fixed luxury-font absolute top-0 z-30 w-full">
           <Navbar />
       </div>
       <HomePage />
@@ -27,6 +28,7 @@ const page = () => {
       <WhyUs />
       <ContactUs />
       <MeetTheFounder/>
+      <OurTeam />
       <Narrow />
       <Footer />
     </div>

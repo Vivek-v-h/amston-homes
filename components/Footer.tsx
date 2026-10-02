@@ -1,6 +1,6 @@
 "use client";
 
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Logo + Tagline */}
         <div className="space-y-4">
           <h3 className="text-2xl font-bold luxury-font text-[#b3995d]">
-            Amston Homes 
+            Amston Homes pvt ltd.
           </h3>
           <p className="text-sm text-gray-400">
             Building beyond bricks. Creating legacies rooted in trust, design, and quality.
@@ -34,6 +34,7 @@ const Footer = () => {
           <h4 className="text-[#b3995d] font-semibold text-lg mb-4">Contact</h4>
           <p className="text-sm text-gray-400">Amston Homes, Kowdiar, Tvm, Kerala</p>
           <p className="text-sm text-gray-400">+91 96336 68594</p>
+          <p className="text-sm text-gray-400">+91 9895105999</p>
           <p className="text-sm text-gray-400">+971 507557686</p>
           <p className="text-sm text-gray-400">contact@amstonhomes.com</p>
         </div>
@@ -42,15 +43,11 @@ const Footer = () => {
         <div>
           <h4 className="text-[#b3995d] font-semibold text-lg mb-4">Follow Us</h4>
           <div className="flex space-x-4 text-[#b3995d]">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF size={20} />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            {newFunction()}
+            <a href="https://www.instagram.com/amstonhomes/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={20} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaLinkedinIn size={20} />
-            </a>
+            
           </div>
         </div>
       </div>
@@ -72,6 +69,16 @@ const Footer = () => {
       </div>
     </footer>
   );
+
+  function newFunction() {
+    return <a
+      href="https://www.youtube.com/@AmstonHomes"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaYoutube size={20} />
+    </a>;
+  }
 };
 
 export default Footer;

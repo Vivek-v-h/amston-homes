@@ -106,7 +106,7 @@ const HomePage = () => {
             src={isMobile ? slide.mobileVideoSrc : slide.videoSrc} // Default video src based on screen size
             type="video/mp4"
           />
-          Your browser does not support the video tag.
+          Your browser does not support this feature.
         </video>
       ))}
 

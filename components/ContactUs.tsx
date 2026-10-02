@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Mail, Instagram, PhoneCall } from "lucide-react";
+import { MapPin, Mail, Instagram, PhoneCall, Youtube } from "lucide-react";
 import toast from "react-hot-toast";
 import { useRef } from "react";
 
@@ -62,6 +62,9 @@ const ContactUs = () => {
                   🇮🇳 <span className="ml-1">+91 9633668594</span>
                 </p>
                 <p>
+                  🇮🇳 <span className="ml-1">+91 9895105999</span>
+                </p>
+                <p>
                   🇦🇪 <span className="ml-1">+971 507557686</span>
                 </p>
               </div>
@@ -113,6 +116,15 @@ const ContactUs = () => {
               className="bg-[#e2b866] text-black p-3 rounded-full"
             >
               <Instagram className="w-5 h-5" />
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              href="https://www.youtube.com/@AmstonHomes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#e2b866] text-black p-3 rounded-full"
+            >
+            <Youtube className="w-5 h-5" />
             </motion.a>
           </div>
 

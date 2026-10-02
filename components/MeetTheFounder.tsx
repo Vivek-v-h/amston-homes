@@ -16,7 +16,7 @@ const MeetTheFounder = () => {
         >
           <div className="relative w-full aspect-[3/4] md:aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-[#e8e6e2]">
             <Image
-              src="/founder.jpg"
+              src="/founder.png"
               alt="Founder"
               fill
               className="object-cover object-top"

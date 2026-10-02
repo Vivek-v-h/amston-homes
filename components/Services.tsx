@@ -40,7 +40,7 @@ const services = [
       "Collaborate with visionary architects to design purposeful, elegant, and sustainable spaces that reflect your dreams.",
   },
   {
-    title: "Rental Resale",
+    title: "Rental & Resale",
     icon: <FaHandshake />,
     description:
       "End-to-end rental and resale support tailored for homeowners, investors, and tenants seeking optimal value.",
