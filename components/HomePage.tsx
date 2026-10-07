@@ -5,22 +5,22 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
-    videoSrc: "/home-bg.mp4", // Desktop video
-    mobileVideoSrc: "/home-bg-mobile.mp4", // Mobile video
-    heading: "Built on trust,",
-    subheading: "Backed by excellence",
+    videoSrc: "/home-bg.mp4",
+    mobileVideoSrc: "/home-bg-mobile.mp4",
+    heading: "Building Better Spaces",
+    subheading: "Creating Long-Term Value through Design & Craftsmanship",
   },
   {
-    videoSrc: "/luxury-home.mp4", // Desktop video
-    mobileVideoSrc: "/luxury-home-mobile.mp4", // Mobile video
-    heading: "Crafted for luxury",
-    subheading: "Engineered for comfort",
+    videoSrc: "/luxury-home.mp4",
+    mobileVideoSrc: "/luxury-home-mobile.mp4",
+    heading: "Your Vision turned Real",
+    subheading: "Thoughtful Planning - Quality Execution",
   },
   {
-    videoSrc: "/skyline-living.mp4", // Desktop video
-    mobileVideoSrc: "/skyline-living-mobile.mp4", // Mobile video
-    heading: "Where vision meets value",
-    subheading: "Live beyond limits",
+    videoSrc: "/skyline-living.mp4",
+    mobileVideoSrc: "/skyline-living-mobile.mp4",
+    heading: "Find Build Belong",
+    subheading: "Real estate made personal",
   },
 ];
 
@@ -133,7 +133,7 @@ const HomePage = () => {
             <h1 className="luxury-font text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2 tracking-wider drop-shadow-[0_3px_4px_rgba(0,0,0,0.4)]">
               {slides[current].heading}
             </h1>
-            <h2 className="luxury-font text-3xl sm:text-4xl md:text-5xl font-medium text-white tracking-wide drop-shadow-[0_2px_3px_rgba(0,0,0,0.4)]">
+            <h2 className="luxury-font text-3xl sm:text-4xl md:text-3xl font-medium text-white tracking-wide drop-shadow-[0_2px_3px_rgba(0,0,0,0.4)]">
               {slides[current].subheading}
             </h2>
           </motion.div>

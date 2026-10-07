@@ -57,27 +57,73 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Amston Homes Team" />
+
+        <meta name="author" content="Amston Homes" />
+
+        <title>
+          Amston Homes | Real Estate, Construction & Property Services
+        </title>
+
         <meta
           name="description"
-          content="Amston Homes offers luxury real estate, construction, and property management services."
+          content="Amston Homes provides real estate, construction, property management and property development services across Kerala and beyond. Explore properties, projects and professional property solutions."
         />
-        <meta
-          name="keywords"
-          content="luxury real estate, construction, property management, villas, apartments, homes, Kerala real estate, property development"
-        />
+
+        <link rel="canonical" href="https://www.amstonhomes.com/" />
+
         <meta name="theme-color" content="#000000" />
+
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://www.amstonhomes.com" />
-        <title>Amston Homes | Luxury Real Estate & Construction</title>
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:title"
+          content="Amston Homes | Real Estate, Construction & Property Services"
+        />
+
+        <meta
+          property="og:description"
+          content="Professional real estate, construction, property management and development services from Amston Homes."
+        />
+
+        <meta property="og:url" content="https://www.amstonhomes.com/" />
+
+        <meta property="og:site_name" content="Amston Homes" />
+
+        <meta
+          property="og:image"
+          content="https://www.amstonhomes.com/og-image.jpg"
+        />
+
+        {/* Twitter / X */}
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Amston Homes | Real Estate, Construction & Property Services"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Explore real estate, construction, property development and property management services from Amston Homes."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://www.amstonhomes.com/og-image.jpg"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-         <Preloader />
-         <Toaster position="top-right" reverseOrder={false} />
+        <Preloader />
+        <Toaster position="top-right" reverseOrder={false} />
         {children}
       </body>
     </html>

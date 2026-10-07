@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -7,26 +8,40 @@ const Aboutus = () => {
   return (
     <section
       id="aboutus"
+      aria-labelledby="aboutus-heading"
       className="w-full px-6 py-20 md:py-28 bg-gradient-to-br from-[#ffffe3] to-[#ffffff]"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Section Title */}
-        <motion.h2
+
+        {/* Section Heading */}
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-4xl md:text-6xl font-semibold tracking-wide text-center mb-16 text-[#111827] luxuryy-font"
+          className="text-center mb-16"
         >
-          OUR STORY
-        </motion.h2>
+          <p className="text-sm md:text-base tracking-[0.3em] font-medium text-[#b3995d] uppercase mb-3">
+            An Amston Approach
+          </p>
+
+          <h2
+            id="aboutus-heading"
+            className="text-4xl md:text-6xl font-semibold tracking-wide text-[#111827] luxuryy-font"
+          >
+            MORE THAN BUILDINGS
+          </h2>
+        </motion.div>
 
         {/* Main Content Layout */}
         <div className="relative grid md:grid-cols-2 gap-14 items-center">
+
           {/* Left Side - Text */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-[#1f1f1f] leading-relaxed"
           >
             <p className="text-lg md:text-xl font-light tracking-wide mb-6 text-[#2e2e2e]">
@@ -34,38 +49,55 @@ const Aboutus = () => {
               <span className="font-semibold text-[#111827] luxuryy-font">
                 Amston Homes
               </span>
-              , we craft more than just buildings — we create luxurious,
-              functional spaces that reflect precision, elegance, and lasting
-              value.
+              , we believe every property is more than a structure. It is a
+              place to live, a space to grow, and an investment in the future.
             </p>
+
             <p className="text-lg md:text-xl font-light tracking-wide mb-6 text-[#2e2e2e]">
-              With a strong foundation in construction and real estate, our
-              services span property management, architectural consultation,
-              rental & resale, and contracting channel partnerships.
+              With a foundation in{" "}
+              <span className="font-medium">
+                real estate and construction
+              </span>
+              , we bring together property development, architectural
+              consultation, property management, rental and resale services
+              under one roof.
             </p>
+
             <p className="text-lg md:text-xl font-light tracking-wide text-[#2e2e2e]">
-              From the first sketch to the final reveal, we approach every
-              project with transparency, craftsmanship, and an unwavering
-              commitment to excellence. At Amston, every home isn’t just built —
-              it’s thoughtfully brought to life.
+              From the first idea to the finished space, we focus on
+              thoughtful planning, clear communication and quality execution —
+              creating spaces and property solutions built for lasting value.
             </p>
-            <p className="text-lg mt-4 md:text-xl font-medium tracking-wide text-[#b3995d]">
-              -"Built on trust, backed by excellence."
-            </p>
+
+            {/* Brand Tagline */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-lg md:text-xl mt-6 font-medium tracking-wide text-[#b3995d]"
+            >
+              “Built on trust, backed by excellence.”
+            </motion.p>
           </motion.div>
 
           {/* Right Side - Image Block */}
           <div className="relative w-full h-full">
+
             {/* Main Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+              }}
               className="overflow-hidden rounded-3xl shadow-2xl border border-[#d4cfc7]"
             >
               <Image
                 src="/assets/aboutus2.png"
-                alt="luxuryy Interior"
+                alt="Amston Homes luxury residential interior"
                 width={650}
                 height={450}
                 className="w-full h-auto object-cover"
@@ -76,17 +108,23 @@ const Aboutus = () => {
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{
+                duration: 0.6,
+                delay: 0.3,
+                ease: "easeOut",
+              }}
               className="absolute -bottom-10 -left-10 w-56 md:w-64 lg:w-72 rounded-2xl overflow-hidden shadow-xl border-[5px] border-white"
             >
               <Image
                 src="/assets/aboutus1.jpg"
-                alt="Modern Architecture"
+                alt="Amston Homes modern residential architecture"
                 width={400}
                 height={300}
                 className="w-full h-auto object-cover"
               />
             </motion.div>
+
           </div>
         </div>
       </div>

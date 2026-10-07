@@ -19,55 +19,55 @@ const services = [
     title: "Construction",
     icon: <FaTools />,
     description:
-      "Residential & commercial construction, renovations, and AMC maintenance delivered with lasting craftsmanship and attention to detail.",
+      "Residential and commercial construction, renovations, and AMC services delivered with quality, precision, and dependable execution.",
   },
   {
     title: "Real Estate",
     icon: <FaBuilding />,
     description:
-      "Comprehensive solutions: plot, flat, villa, apartment, and commercial space sales, with seamless property management services.",
+      "Buy and sell plots, villas, apartments, flats, and commercial properties with professional guidance from search to transaction.",
   },
   {
     title: "Property Management",
     icon: <FaHome />,
     description:
-      "Protect and grow your asset value with full-service property maintenance, tenant coordination, and hassle-free operations.",
+      "Professional property management covering maintenance, tenant coordination, and day-to-day care of your property.",
   },
   {
     title: "Architect Consultation",
     icon: <FaPencilRuler />,
     description:
-      "Collaborate with visionary architects to design purposeful, elegant, and sustainable spaces that reflect your dreams.",
+      "Architectural planning and consultation focused on functional, practical, and thoughtfully designed residential and commercial spaces.",
   },
   {
-    title: "Rental & Resale",
+    title: "Rental and Resale",
     icon: <FaHandshake />,
     description:
-      "End-to-end rental and resale support tailored for homeowners, investors, and tenants seeking optimal value.",
+      "Reliable rental and resale support for property owners, buyers, tenants, and investors, from marketing to closure.",
   },
   {
     title: "Contracting",
     icon: <FaChartLine />,
     description:
-      "Efficient execution through material and project sub-contracting, ensuring timely delivery with quality and compliance.",
+      "Material and project subcontracting with coordinated execution, quality control, compliance, and timely delivery.",
   },
   {
     title: "Channel Partnering",
     icon: <FaUsers />,
     description:
-      "Join our trusted partner network and grow with us through collaborative opportunities in real estate and construction.",
+      "Collaborative channel partnerships across real estate and construction, creating opportunities for businesses and professionals.",
   },
   {
     title: "Interior Design",
     icon: <FaCouch />,
     description:
-      "Interior excellence across residential flats, villas, and commercial spaces – where function meets refined aesthetics.",
+      "Residential and commercial interior design that brings together functionality, comfort, and a refined sense of style.",
   },
   {
     title: "Infrastructure Development",
     icon: <FaRoad />,
     description:
-      "From utilities, we create foundational infrastructure that uplifts communities and enables future-ready living.",
+      "Infrastructure solutions that support well-planned properties, communities, utilities, and long-term development.",
   },
 ];
 
@@ -86,7 +86,7 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-center mb-16 tracking-wide"
         >
-          Our <span className="text-[#e2b866]">Services</span>
+          What <span className="text-[#e2b866]"> we do</span>
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
