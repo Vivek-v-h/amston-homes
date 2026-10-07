@@ -6,8 +6,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const locations = [
   { city: "Trivandrum", country: "India" },
   { city: "Kochi", country: "India" },
-  { city: "Bangalore", country: "India" },
-  { city: "Dubai", country: "UAE" },
+  { city: "Bangalore", country: "India" }
 ];
 
 const Locations = () => {
